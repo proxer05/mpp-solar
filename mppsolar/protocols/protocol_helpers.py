@@ -83,6 +83,15 @@ def uptime(byteData):
     log.info(f"Uptime result {uptime}")
     return uptime
 
+def jkcurrent(hexToDecode):
+    """
+    Decode a 2 byte hexString to current as per jkbms approach
+    """
+
+    chargingCurrent = ((unpack(">h", hexToDecode)[0]) & 0xfff) * -0.01
+
+    return chargingCurrent
+
 
 def Hex2Int(hexString):
     """

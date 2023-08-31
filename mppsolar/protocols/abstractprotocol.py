@@ -12,6 +12,7 @@ from .protocol_helpers import LittleHex2Float, LittleHex2Short  # noqa: F401
 from .protocol_helpers import LittleHex2UInt, LittleHex2Int  # noqa: F401
 from .protocol_helpers import Hex2Ascii, Hex2Int, Hex2Str  # noqa: F401
 from .protocol_helpers import uptime  # noqa: F401
+from .protocol_helpers import jkcurrent
 from .protocol_helpers import crcPI as crc
 
 log = logging.getLogger("AbstractProtocol")

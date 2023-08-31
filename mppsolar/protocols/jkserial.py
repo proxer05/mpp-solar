@@ -55,7 +55,7 @@ COMMANDS = {
             ["discard", 1, "Battery_Voltage", ""],
             ["BigHex2Short:r/100", 2, "Battery_Voltage", "V"],
             ["discard", 1, "Balance_Current", ""],
-            ["BigHex2Short:r/1000", 2, "Balance_Current", "A"], # Needs other formula
+            ["jkcurrent", 2, "Balance_Current", "A"], # Needs other formula
             ["discard", 1, "Percent_Remain", ""],
             ["Hex2Int", 1, "Percent_Remain", "%"],
             ["discard", 2, "Number of battery sensors", ""],  # useless so dropped
